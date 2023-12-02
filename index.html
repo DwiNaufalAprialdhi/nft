@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./css/output.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.svg" />
+    <title>NFT - Marketplace</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar" id="myNav">
+      <a href="index.html" class="navbar-left">
+        <img src="./assets/icons/logo.svg" alt="logo" class="navbar-logo" />
+        <h2 class="navbar-brand">NFT Marketplace</h2>
+      </a>
+      <ul class="navbar-right">
+        <li><a href="#" class="navbar-link">Marketplace</a></li>
+        <li><a href="#" class="navbar-link">Rangkings</a></li>
+        <li><a href="#" class="navbar-link">Connect a Wallet</a></li>
+        <li>
+          <a href="#" class="navbar-button"
+            ><img src="./assets/icons/user.svg" alt="user" />Sign Up</a
+          >
+        </li>
+      </ul>
+      <img
+        src="./assets/icons/burger-menu.svg"
+        alt="menu"
+        class="navbar-hamburger"
+        onclick="openOverlay()"
+      />
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Overlay Mobile Start -->
+    <ul class="overlay">
+      <li>
+        <svg
+          onclick="closeOverlay()"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="overlay-close"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </li>
+      <li><a href="#" class="navbar-link">Marketplace</a></li>
+      <li><a href="#" class="navbar-link">Rangkings</a></li>
+      <li><a href="#" class="navbar-link">Connect a Wallet</a></li>
+      <li>
+        <a href="#" class="navbar-button"
+          ><img src="./assets/icons/user.svg" alt="user" />Sign Up</a
+        >
+      </li>
+    </ul>
+    <!-- Overlay Mobile End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="hero-title">Discover digital art & Collect NFTs</h1>
+        <h2 class="hero-desc">
+          NFT marketplace UI created with Anima for Figma. Collect, buy and sell
+          art from more than 20k NFT artists.
+        </h2>
+        <a href="#" type="button" class="hero-button">
+          <img src="./assets/icons/rocket.svg" alt="rocket" />
+          Get Started
+        </a>
+        <div class="hero-left-flex">
+          <div class="hero-left-flex-row">
+            <h2 class="hero-qty">240k+</h2>
+            <h2 class="hero-label">Total Sale</h2>
+          </div>
+          <div class="hero-left-flex-row">
+            <h2 class="hero-qty">100k+</h2>
+            <h2 class="hero-label">Auctions</h2>
+          </div>
+          <div class="hero-left-flex-row">
+            <h2 class="hero-qty">240k+</h2>
+            <h2 class="hero-label">Artists</h2>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-right-card">
+          <img
+            src="./assets/images/hero-image.svg"
+            alt="hero-image"
+            class="hero-right-card-image"
+          />
+          <div class="hero-right-card-body">
+            <h2 class="hero-card-title">Space Walking</h2>
+            <div class="hero-card-flex">
+              <img
+                src="./assets/images/avatar1.svg"
+                alt="avatar"
+                class="hero-card-avatar"
+              />
+              <h2 class="hero-card-name">animakid</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Trending Collection Start -->
+    <section class="trending">
+      <div class="trending-head">
+        <h2 class="trending-title">Trending Collection</h2>
+        <p class="trending-desc">
+          Checkout our weekly updated trending collection.
+        </p>
+      </div>
+      <div class="trending-grid">
+        <div class="trending-card-head">
+          <img
+            src="./assets/images/trending1.svg"
+            alt="trending"
+            class="trending-images"
+          />
+          <div class="trending-card-body">
+            <img
+              src="./assets/images/trending1.1.svg"
+              alt="subimages"
+              class="trending-subimages"
+            />
+            <img
+              src="./assets/images/trending1.2.svg"
+              alt="subimages"
+              class="trending-subimages"
+            />
+            <a href="#" class="trending-more">1025+</a>
+          </div>
+          <div class="trending-card-footer">
+            <h2 class="trending-label">DSGN Animals</h2>
+            <div class="trending-avatar-name">
+              <img
+                src="./assets/images/mrfox.svg"
+                alt="avatar"
+                class="trending-avatar"
+              />
+              <h2 class="trending-name">MrFox</h2>
+            </div>
+          </div>
+        </div>
+        <div class="trending-card-head">
+          <img
+            src="./assets/images/trending2.svg"
+            alt="trending"
+            class="trending-images"
+          />
+          <div class="trending-card-body">
+            <img
+              src="./assets/images/trending2.1.svg"
+              alt="subimages"
+              class="trending-subimages"
+            />
+            <img
+              src="./assets/images/trending2.2.svg"
+              alt="subimages"
+              class="trending-subimages"
+            />
+            <a href="#" class="trending-more">1025+</a>
+          </div>
+          <div class="trending-card-footer">
+            <h2 class="trending-label">Magic Mushrooms</h2>
+            <div class="trending-avatar-name">
+              <img
+                src="./assets/images/shroomie.svg"
+                alt="avatar"
+                class="trending-avatar"
+              />
+              <h2 class="trending-name">Shroomie</h2>
+            </div>
+          </div>
+        </div>
+        <div class="trending-card-head">
+          <img
+            src="./assets/images/trending3.svg"
+            alt="trending"
+            class="trending-images"
+          />
+          <div class="trending-card-body">
+            <img
+              src="./assets/images/trending3.1.svg"
+              alt="subimages"
+              class="trending-subimages"
+            />
+            <img
+              src="./assets/images/trending3.2.svg"
+              alt="subimages"
+              class="trending-subimages"
+            />
+            <a href="#" class="trending-more">1025+</a>
+          </div>
+          <div class="trending-card-footer">
+            <h2 class="trending-label">Disco Machines</h2>
+            <div class="trending-avatar-name">
+              <img
+                src="./assets/images/bekind.svg"
+                alt="avatar"
+                class="trending-avatar"
+              />
+              <h2 class="trending-name">BeKind2Robots</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trending Collection End -->
+
+    <!-- Top Creators Start -->
+    <section class="creator">
+      <div class="creator-head">
+        <div class="creator-flex-col">
+          <h2 class="creator-title">Top creators</h2>
+          <p class="creator-desc">
+            Checkout Top Rated Creators on the NFT Marketplace
+          </p>
+        </div>
+        <a href="#" type="button" class="creator-button">
+          <img src="./assets/icons/rocket-purple.svg" alt="rocket" />
+          View Rangkings
+        </a>
+      </div>
+      <div class="creator-body">
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator1.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">1</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">Keepitreal</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator2.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">2</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">DigiLab</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator3.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">3</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">GravityOne</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator4.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">4</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">Juanie</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator5.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">5</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">BlueWhale</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator6.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">6</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">mr fox</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator7.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">7</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">Shroomie</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator8.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">8</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">robotica</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator9.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">9</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">RustyRobot</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator10.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">10</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">animakid</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator11.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">11</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">Dotgu</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-card-head">
+            <img
+              src="./assets/images/creator12.svg"
+              alt="creator"
+              class="creator-images"
+            />
+            <div class="creator-number">12</div>
+          </div>
+          <div class="creator-card-body">
+            <h2 class="creator-name">Ghiblier</h2>
+            <h2 class="creator-total">
+              Total Sales:
+              <span class="font-space-mono text-white">34.53 ETH</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Creators End -->
+
+    <!-- JS -->
+    <script src="./js/style.js"></script>
+  </body>
+</html>
