@@ -206,4 +206,36 @@
     .creator-total {
         @apply text-caption-label-text text-base font-normal leading-6 text-start lg:text-center;
     }
+
+    /* Categories Class */
+    .categories {
+        @apply flex flex-col gap-10 lg:gap-[60px];
+    }
+    .categories-title {
+        @apply lg:text-[38px] md:text-[28px] text-[28px] font-semibold leading-[45px] capitalize;
+    }
+    .categories-body {
+        @apply grid grid-cols-12 items-center gap-[20px] md:gap-[30px] lg:gap-[30px] w-full;
+    }
+    .categories-card {
+        @apply bg-background-secondary rounded-[20px] overflow-hidden col-span-6 md:col-span-3 lg:col-span-3;
+    }
+    .categories-card-head {
+        @apply relative;
+    }
+    .categories-images {
+        @apply w-full object-cover;
+    }
+    .categories-images-blur {
+        @apply w-full h-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 blur-sm z-[5] object-cover;
+    }
+    .categories-icons {
+        @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10;
+    }
+    .categories-card-body {
+        @apply py-5 px-[30px];
+    }
+    .categories-name {
+        @apply lg:text-[22px] md:text-base text-base font-semibold leading-8 capitalize;
+    }
 }
